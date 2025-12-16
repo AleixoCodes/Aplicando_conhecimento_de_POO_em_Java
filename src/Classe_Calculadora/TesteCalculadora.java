@@ -4,7 +4,7 @@ public class TesteCalculadora {
     public static void main(String[] args) {
         Calculadora minhaCalc = new Calculadora();
         
-        System.out.println("--- Testando a Classe_Calculadora.Calculadora ---");
+        System.out.println("--- Testando a Calculadora ---");
         
         double resultadoSoma = minhaCalc.somar(10.5, 5.5);
         System.out.println("Soma (10.5 + 5.5): " + resultadoSoma);
