@@ -1,3 +1,5 @@
+package Classe_Cachorro;
+
 public class Cachorro {
 
     private String nome;

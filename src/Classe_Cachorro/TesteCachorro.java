@@ -1,3 +1,5 @@
+package Classe_Cachorro;
+
 public class TesteCachorro {
     public static void main (String[] args) {
         Cachorro meuCachorro = new Cachorro();
