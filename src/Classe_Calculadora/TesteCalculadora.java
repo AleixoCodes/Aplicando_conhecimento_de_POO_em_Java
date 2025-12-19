@@ -20,5 +20,7 @@ public class TesteCalculadora {
 
         double resultadoDivErro = minhaCalc.dividir(10, 0);
         System.out.println("Divisão por zero (10 / 0): " + resultadoDivErro);
+
+        System.out.println("--- Testando a Calculadora ---");
     }
 }
