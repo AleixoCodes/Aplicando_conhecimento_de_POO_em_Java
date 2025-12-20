@@ -1,0 +1,33 @@
+public class Aluno {
+
+    private String matricula;
+    private String nome;
+    private double notaProva1;
+    private double notaProva2;
+    private double notaTrabalho;
+    
+    public Aluno(String matricula, String nome, double nota1, double nota2, double notaTrabalho) {
+        this.matricula = matricula;
+        this.nome = nome;
+        this.notaProva1 = nota1;
+        this.notaProva2 = nota2;
+        this.notaTrabalho = notaTrabalho;
+    }
+
+    public double media() {
+        double mediaFinal = (notaProva1 + notaProva2 + notaTrabalho) / 3.0;
+        return mediaFinal;
+    }
+    
+    public void imprimeDados() {
+        System.out.println("--- Ficha do Aluno ---");
+        System.out.println("Matrícula: " + this.matricula);
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Nota Prova 1: " + this.notaProva1);
+        System.out.println("Nota Prova 2: " + this.notaProva2);
+        System.out.println("Nota Trabalho: " + this.notaTrabalho);
+        
+        System.out.printf("Média Final: %.2f\n", this.media());
+        System.out.println("-----------------------");
+    }
+}

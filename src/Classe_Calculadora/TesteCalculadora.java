@@ -7,6 +7,7 @@ public class TesteCalculadora {
         Scanner scanner = new Scanner(System.in);
 
         Calculadora minhaCalc = new Calculadora();
+
         System.out.println("--- Testando a Calculadora ---");
 
         System.out.println("Escolha o tipo de operação a ser executado:('+'|'-'|'*'|'/'");
@@ -18,12 +19,14 @@ public class TesteCalculadora {
         System.out.println("Escolha o segundo numero:");
         double segundoNum = scanner.nextDouble();
 
-        switch (Escolha) {
+        while (!Escolha.equalsIgnoreCase("sair")) {
+            switch (Escolha) {
             case "+" -> System.out.println(minhaCalc.somar(primeiroNum, segundoNum));
             case "-" -> System.out.println(minhaCalc.subtrair(primeiroNum, segundoNum));
             case "*" -> System.out.println(minhaCalc.multiplicar(primeiroNum, segundoNum));
             case "/" -> System.out.println(minhaCalc.dividir(primeiroNum, segundoNum));
             default -> System.out.println("Operação invalida. Escreva apenas as opções exibidas.");
+            }
         }
     }
 }
