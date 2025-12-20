@@ -1,26 +1,29 @@
 package Classe_Calculadora;
 
+import java.util.Scanner;
+
 public class TesteCalculadora {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
         Calculadora minhaCalc = new Calculadora();
-        
         System.out.println("--- Testando a Calculadora ---");
-        
-        double resultadoSoma = minhaCalc.somar(10.5, 5.5);
-        System.out.println("Soma (10.5 + 5.5): " + resultadoSoma);
-        
-        double resultadoSub = minhaCalc.subtrair(100, 45);
-        System.out.println("Subtração (100 - 45): " + resultadoSub);
-        
-        double resultadoMult = minhaCalc.multiplicar(7, 6);
-        System.out.println("Multiplicação (7 * 6): " + resultadoMult);
-        
-        double resultadoDiv = minhaCalc.dividir(50, 4);
-        System.out.println("Divisão (50 / 4): " + resultadoDiv);
 
-        double resultadoDivErro = minhaCalc.dividir(10, 0);
-        System.out.println("Divisão por zero (10 / 0): " + resultadoDivErro);
+        System.out.println("Escolha o tipo de operação a ser executado:('+'|'-'|'*'|'/'");
+        String Escolha = scanner.next();
 
-        System.out.println("--- Testando a Calculadora ---");
+        System.out.println("Escolha o primeiro numero:");
+        double primeiroNum = scanner.nextDouble();
+
+        System.out.println("Escolha o segundo numero:");
+        double segundoNum = scanner.nextDouble();
+
+        switch (Escolha) {
+            case "+" -> System.out.println(minhaCalc.somar(primeiroNum, segundoNum));
+            case "-" -> System.out.println(minhaCalc.subtrair(primeiroNum, segundoNum));
+            case "*" -> System.out.println(minhaCalc.multiplicar(primeiroNum, segundoNum));
+            case "/" -> System.out.println(minhaCalc.dividir(primeiroNum, segundoNum));
+            default -> System.out.println("Operação invalida. Escreva apenas as opções exibidas.");
+        }
     }
 }
