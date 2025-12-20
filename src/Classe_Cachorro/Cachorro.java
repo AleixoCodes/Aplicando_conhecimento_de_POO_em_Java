@@ -1,6 +1,6 @@
 package Classe_Cachorro;
 
-public class Cachorro {
+public class Cachorro  implements Uivavel {
 
     private String nome;
     private String raca;
@@ -28,5 +28,10 @@ public class Cachorro {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    @Override
+    public void uivar() {
+        System.out.println("dog com um uivar");
     }
 }
