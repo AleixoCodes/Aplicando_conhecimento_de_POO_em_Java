@@ -1,3 +1,5 @@
+package Classe_TextoseNumeros;
+
 public class Texto {
     public String texto;
 
