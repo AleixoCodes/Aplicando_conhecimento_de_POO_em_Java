@@ -47,7 +47,7 @@ public class Texto {
         if (textoMin.contains(outraMin)){
             return true;
         }
-        else{
+        else {
             return false;
         }
     }
