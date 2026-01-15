@@ -1,7 +1,7 @@
 package Classe_TextoseNumeros;
 
 public class Texto {
-    public String texto;
+    private String texto;
 
     public Texto(String texto){
         this.texto = texto;
@@ -32,11 +32,8 @@ public class Texto {
         else if(comparar > 0){
             return "maior";
         }
-        else if(comparar < 0){
+        else {
             return "menor";
-        }
-        else{
-            return "indefinido";
         }
     }
 
@@ -44,16 +41,14 @@ public class Texto {
         String textoMin = texto.toLowerCase();
         String outraMin = outra.toLowerCase();
 
-        if (textoMin.contains(outraMin)){
-            return true;
-        }
-        else {
-            return false;
-        }
+        return textoMin.contains(outraMin);
     }
 
     public String juntar(String outra){
         return texto.concat(outra);
     }
 
+    public int localizar(String outra){
+        return texto.indexOf(outra);
+    }
 }
