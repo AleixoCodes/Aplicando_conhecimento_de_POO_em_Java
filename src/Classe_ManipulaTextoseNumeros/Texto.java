@@ -1,4 +1,4 @@
-package Classe_TextoseNumeros;
+package Classe_ManipulaTextoseNumeros;
 
 public class Texto {
     private String texto;
