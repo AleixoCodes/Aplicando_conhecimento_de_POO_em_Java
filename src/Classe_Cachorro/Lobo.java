@@ -2,16 +2,16 @@ package Classe_Cachorro;
 
 public class Lobo implements Uivavel {
 
-    private String nome;
+    private String classe;
     private String raca;
     private int idade;
 
-    public String getNome() {
-        return nome;
+    public String getClasse() {
+        return classe;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setClasse(String classe) {
+        this.classe = classe;
     }
 
     public String getRaca() {
@@ -32,6 +32,6 @@ public class Lobo implements Uivavel {
 
     @Override
     public void uivar() {
-       System.out.println("Lobo com um uivar");
+       System.out.println("Lobo uivando...");
     }
 }

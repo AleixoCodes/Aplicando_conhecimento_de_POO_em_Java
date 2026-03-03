@@ -32,6 +32,6 @@ public class Cachorro  implements Uivavel {
 
     @Override
     public void uivar() {
-        System.out.println("dog com um uivar");
+        System.out.println("Cachorro uivando...");
     }
 }
