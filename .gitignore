@@ -4,5 +4,6 @@ shelf/
 bin/
 lib/
 out/
+**/Conta_Bancaria/
 # Editor-based HTTP Client requests
 /httpRequests/
