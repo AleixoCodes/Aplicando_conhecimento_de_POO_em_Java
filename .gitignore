@@ -1,8 +1,8 @@
 # Default ignored files
-/shelf/
-/.idea/
-/bin/
-/lib/
-/out/
+shelf/
+.idea/
+bin/
+lib/
+out/
 # Editor-based HTTP Client requests
 /httpRequests/
